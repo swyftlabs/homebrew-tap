@@ -5,21 +5,21 @@
 class Serve < Formula
   desc "Lightweight self-hosted tunnel to expose local dev servers publicly"
   homepage "https://github.com/swyftlabs/serve"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/swyftlabs/serve/releases/download/v0.2.1/serve_0.2.1_darwin_amd64.tar.gz"
-      sha256 "616025a2cd04391fcf0016e84b296f2c0fc168a70ec371ab9e352c46617a4fef"
+      url "https://github.com/swyftlabs/serve/releases/download/v0.3.0/serve_0.3.0_darwin_amd64.tar.gz"
+      sha256 "8d909e463d345e56c5567a816afc398a715d9767d1b51397002c153c8e1c1b2c"
 
       define_method(:install) do
         bin.install "serve"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/swyftlabs/serve/releases/download/v0.2.1/serve_0.2.1_darwin_arm64.tar.gz"
-      sha256 "88c46af4701ee8e5c159c6c59d0042a5cdca566c36c3115753090f8b5c22d19d"
+      url "https://github.com/swyftlabs/serve/releases/download/v0.3.0/serve_0.3.0_darwin_arm64.tar.gz"
+      sha256 "081760a4b422c342dfe155d9ff9a78296f435f0acf9c27f513e8c992f6e8ba0c"
 
       define_method(:install) do
         bin.install "serve"
@@ -29,15 +29,15 @@ class Serve < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/swyftlabs/serve/releases/download/v0.2.1/serve_0.2.1_linux_amd64.tar.gz"
-      sha256 "01f44ccc41f9a590641c067989af2b0cde606ce993f3aed157ae341569773681"
+      url "https://github.com/swyftlabs/serve/releases/download/v0.3.0/serve_0.3.0_linux_amd64.tar.gz"
+      sha256 "34de2550cee4dcf968cd09276dba60774e689b5a1a3e89dd72e0992e78c001ba"
       define_method(:install) do
         bin.install "serve"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/swyftlabs/serve/releases/download/v0.2.1/serve_0.2.1_linux_arm64.tar.gz"
-      sha256 "b45bb174c8af81f303964a0f75f483cffa4224b27349cb34dc9b3ed7e056e598"
+      url "https://github.com/swyftlabs/serve/releases/download/v0.3.0/serve_0.3.0_linux_arm64.tar.gz"
+      sha256 "9da3a6aa524ff303094e990b995e04bc44b4d53ec4d52fbc2710890d176b4724"
       define_method(:install) do
         bin.install "serve"
       end
