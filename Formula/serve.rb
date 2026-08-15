@@ -6,7 +6,7 @@ class Serve < Formula
   desc "Lightweight self-hosted tunnel to expose local dev servers publicly"
   homepage "https://github.com/swyftlabs/serve"
   version "0.3.0"
-  license "MIT"
+  license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
