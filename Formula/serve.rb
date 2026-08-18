@@ -5,21 +5,21 @@
 class Serve < Formula
   desc "Public tunnel for hosted serve accounts"
   homepage "https://github.com/swyftlabs/serve"
-  version "0.4.1"
+  version "0.5.0"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/swyftlabs/serve-dist/releases/download/v0.4.1/serve_0.4.1_darwin_amd64.tar.gz"
-      sha256 "2979ac754014c9e771525c57fd53d5c5c773427ad7cb7724e090b2d5b1a6793d"
+      url "https://github.com/swyftlabs/serve-dist/releases/download/v0.5.0/serve_0.5.0_darwin_amd64.tar.gz"
+      sha256 "3c3042fb3ff9b2fb6e70c11a403c93cbee9890bbbe80be80a5230df93e1b1f41"
 
       define_method(:install) do
         bin.install "serve"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/swyftlabs/serve-dist/releases/download/v0.4.1/serve_0.4.1_darwin_arm64.tar.gz"
-      sha256 "3cd16192e41b551ee2184cdcf3653d2ec912d1b53b45f9f6c9e9c6078f3182fc"
+      url "https://github.com/swyftlabs/serve-dist/releases/download/v0.5.0/serve_0.5.0_darwin_arm64.tar.gz"
+      sha256 "3a5ef1fae4e58e02dac7457564265c764b97064bd18c9aba559b9d321082663d"
 
       define_method(:install) do
         bin.install "serve"
@@ -29,15 +29,15 @@ class Serve < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/swyftlabs/serve-dist/releases/download/v0.4.1/serve_0.4.1_linux_amd64.tar.gz"
-      sha256 "d6d1105f128ff323457b3ed62562c96f6668605b19dca5886d43c07240846175"
+      url "https://github.com/swyftlabs/serve-dist/releases/download/v0.5.0/serve_0.5.0_linux_amd64.tar.gz"
+      sha256 "d71e21c117755dc3684822516bc06a9edf0107800c6c5b62a71d5baf8916b7d7"
       define_method(:install) do
         bin.install "serve"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/swyftlabs/serve-dist/releases/download/v0.4.1/serve_0.4.1_linux_arm64.tar.gz"
-      sha256 "eb5f93390ee0607a91ca0e6ab881b1b7802906fd45b0b9c561d6ce9ffb1ef083"
+      url "https://github.com/swyftlabs/serve-dist/releases/download/v0.5.0/serve_0.5.0_linux_arm64.tar.gz"
+      sha256 "c8f16bf2736bd76f3266a60903fc5d67eefba45577158ef3437034657c00d51f"
       define_method(:install) do
         bin.install "serve"
       end
